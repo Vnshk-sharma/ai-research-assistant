@@ -3,8 +3,6 @@
 [![CI](https://github.com/USERNAME/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/USERNAME/REPO/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-*(Replace `USERNAME/REPO` above with your actual GitHub path once pushed.)*
-
 
 A production-quality Retrieval-Augmented Generation (RAG) system for uploading, searching, and reasoning over research papers. Built as a full-stack demonstration of transformer-based NLP, vector search, and clean backend/frontend architecture.
 
