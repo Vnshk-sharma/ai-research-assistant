@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #b5563c33;
+}
+
+/* Footnote marker — the app's signature element. A small superscript
+   numeral, styled like a real academic footnote reference, that reveals
+   its source citation in a popover on hover/focus. */
+.footnote-marker {
+  @apply inline-flex items-center justify-center align-super text-[10px] font-mono
+         w-4 h-4 rounded-full border border-sienna text-sienna
+         hover:bg-sienna hover:text-paper cursor-pointer transition-colors duration-150;
+  transform: translateY(-2px);
+}
+
+.footnote-card {
+  @apply absolute z-20 w-72 bg-paper border border-rule shadow-lg rounded-card p-3 text-xs
+         text-ink-soft leading-relaxed;
+}
+
+.rule-hairline {
+  border-top: 1px solid theme("colors.rule");
+}
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
